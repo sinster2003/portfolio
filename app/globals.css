@@ -10,6 +10,20 @@
   background: #7C3AED;
 }
 
+::selection {
+  background: #7c3aed38;
+}
+
+.vertical-timeline-element-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-timeline-element {
+  position: relative;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Blob from "@/public/blob1.svg";
-import Landing from './landing/Landing';
+import Landing from '../landing/Landing';
 
 const HeroSection = () => {
   return (

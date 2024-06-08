@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "role": "Javascript Contributor - Hacktoberfest",
+        "place": "DOM Wizard",
+        "work": [
+            "Worked as a part of Hacktoberfest event on DOM Wizard for aiding easier dom manipulation.",
+            "Contributed as one of the primary contributors by building functions to read an attribute of the element.",
+            "Built a mini redux like store to use variables accross the application using localStorage.",
+            "Retrieval and Creation of the store object in DOM Wizard is the primary feature contributed from my side."
+        ],
+        "timeline": "October 2023 - October 2023",
+        "img": "/domwizard.png",
+        "background": "white"
+    }, 
+    {
+        "id": "2",
+        "role": "SDE Intern",
+        "place": "CosmicTech.io",
+        "work": [
+            "Working as a SDE Intern, primarily focused on the full stack part of the application.",
+            "Contributed on the enhancement of UI by building image crop functionality and notification streams.",
+            "Worked exclusively on forms and validation.",
+            "Built the authentication system in the backend part using firebase and majorly helped to link mutliple auth providers to a single account."
+        ],
+        "timeline": "March 2024 - Present",
+        "img": "/cosmic.png",
+        "background": "#030712"
+    }
+]

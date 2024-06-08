@@ -10,6 +10,7 @@ const Landing = () => {
           <TypedName/>
         </div>
         <span>Shabaraya</span>
+        <p className="text-2xl tracking-normal font-light pt-4 pl-1">In short, I develop FullStack Web Applications.</p>
       </div>
     </LandingWrapper>
   );
