@@ -9,9 +9,9 @@ const page = () => {
   return (
     <div>
       <HeroSection />
-      <TimelineSection />
       <TechSection/>
       <ProjectSection/>
+      <TimelineSection />
       <AboutSection/>
       <ContactSection/>
     </div>

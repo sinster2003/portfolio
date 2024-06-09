@@ -1,7 +1,42 @@
 [
-    {}, 
-    {},
-    {},
-    {},
-    {}
+    {
+        "id": "1",
+        "title": "Portfolio",
+        "desc": "A web portfolio for showcasing my projects and learnings. Built using NextJS and Framer motion for animations along tailwindCSS for styling.",
+        "src": "/portfolio.png",
+        "githublink": "https://github.com/sinster2003/portfolio",
+        "livelink": "http://localhost:3000/"
+    },
+    {
+        "id": "2",
+        "title": "Gamequest",
+        "desc": "A gaming marketplace for everyone who wants buy or sell games. Built using the MERN Stack - MongoDB, Express, React, NodeJS and ChakraUI as the UI framework.",
+        "src": "/gamequest.png",
+        "githublink": "https://github.com/sinster2003/game-quest",
+        "livelink": "https://game-quest.onrender.com/"
+    }, 
+    {
+        "id": "3",
+        "title": "Threads",
+        "desc": "A social media app inspired by threads. Built using the MERN Stack - MongoDB, Express, React, NodeJS and ChakraUI as the UI framework.",
+        "src": "/threads.png",
+        "githublink": "https://github.com/sinster2003/threads-clone",
+        "livelink": "https://threads-social-media-clone.onrender.com/"
+    },
+    {
+        "id": "4",
+        "title": "PayTM Prototype",
+        "desc": "A simple demonstration of banking application using sessions and transactions. Built using the MERN Stack - MongoDB, Express, React, NodeJS and tailwindCSS for styling.",
+        "src": "/paytm.png",
+        "githublink": "https://github.com/sinster2003/paytm-prototype",
+        "livelink": "https://paytm-prototype-clone-app.onrender.com/"
+    },
+    {
+        "id": "5",
+        "title": "Phoenix",
+        "desc": "An marketplace for buying headphones and acoustic products. Built using NextJS and Sanity CMS.",
+        "src": "/headphones.png",
+        "githublink": "https://github.com/sinster2003/headphones-ecommerce-webapp",
+        "livelink": "https://headphones-ecommerce-webapp.vercel.app/"
+    }
 ]
