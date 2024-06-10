@@ -1,5 +1,5 @@
 import React from 'react'
-import Tech from '../ui/Tech'
+import Tech from '../Tech'
 
 const TechSection = () => {
   return (

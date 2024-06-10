@@ -1,4 +1,4 @@
-import Projects from "../ui/Projects"
+import Projects from "../Projects"
 
 const ProjectSection = () => {
   return (

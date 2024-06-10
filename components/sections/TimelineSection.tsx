@@ -1,5 +1,5 @@
 "use client"
-import Timeline from "../ui/Timeline"
+import Timeline from "../Timeline"
 
 const TimelineSection = () => {
   return (

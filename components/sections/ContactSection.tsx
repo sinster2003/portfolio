@@ -1,4 +1,4 @@
-import Contact from "../ui/Contact"
+import Contact from "../Contact"
 
 const ContactSection = () => {
   return (

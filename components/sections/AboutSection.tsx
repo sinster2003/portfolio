@@ -1,4 +1,4 @@
-import About from "../ui/About"
+import About from "../About"
 
 const AboutSection = () => {
   return (
