@@ -71,7 +71,7 @@ const FormComponent = ({ form, onSubmit }: { form: any, onSubmit: any}) => {
                     />
                   </FormControl>
                   <FormDescription>
-                    Your message will be mailed to sindhurvshabaraya@gmail.com
+                    Your message is mailed to sindhurvshabaraya2318@gmail.com
                   </FormDescription>
                   <FormMessage />
                   <Button type="submit">Submit</Button>
