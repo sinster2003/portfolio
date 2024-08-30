@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
-import Blob from "@/public/blob1.svg";
 import BlobComponent from './BlobComponent';
 
 interface Experience {

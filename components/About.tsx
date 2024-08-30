@@ -44,7 +44,9 @@ const About = () => {
             </ul>
           </div>
           <div className="flex flex-row gap-2 absolute bottom-10 -ml-1.5">
-          <Image src="/github.png" alt="github" width={30} height={30}/>
+          <Link href="https://github.com/sinster2003" target="_blank">
+            <Image src="/github.png" alt="github" width={30} height={30}/>
+          </Link>
           <Link href="mailto:sindhurvshabaraya2318@gmail.com" className="hover:underline">
             <Image src="/mail-purple.png" alt="mail" width={30} height={30}/>
           </Link>

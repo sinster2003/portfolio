@@ -1,5 +1,13 @@
 [
     {
+        "id": "0",
+        "title": "Grantitude",
+        "desc": "A blockchain powered github bounty dispenser which eases bounty distribution in the form of crypto to the open source contributors. Built using Solidity and React.",
+        "src": "/grantitude.png",
+        "githublink": "https://github.com/sinster2003/grantitude",
+        "livelink": "https://grantitude-github.vercel.app/"
+    },
+    {
         "id": "1",
         "title": "Portfolio",
         "desc": "A web portfolio for showcasing my projects and learnings. Built using NextJS and Framer motion for animations along tailwindCSS for styling.",
@@ -25,6 +33,14 @@
     },
     {
         "id": "4",
+        "title": "Phoenix",
+        "desc": "An marketplace for buying headphones and acoustic products. Built using NextJS and Sanity CMS.",
+        "src": "/headphones.png",
+        "githublink": "https://github.com/sinster2003/headphones-ecommerce-webapp",
+        "livelink": "https://headphones-ecommerce-webapp.vercel.app/"
+    },
+    {
+        "id": "5",
         "title": "PayTM Prototype",
         "desc": "A simple demonstration of banking application using sessions and transactions. Built using the MERN Stack - MongoDB, Express, React, NodeJS and tailwindCSS for styling.",
         "src": "/paytm.png",
@@ -32,11 +48,11 @@
         "livelink": "https://paytm-prototype-clone-app.onrender.com/"
     },
     {
-        "id": "5",
-        "title": "Phoenix",
-        "desc": "An marketplace for buying headphones and acoustic products. Built using NextJS and Sanity CMS.",
-        "src": "/headphones.png",
-        "githublink": "https://github.com/sinster2003/headphones-ecommerce-webapp",
-        "livelink": "https://headphones-ecommerce-webapp.vercel.app/"
+        "id": "6",
+        "title": "BlogSum",
+        "desc": "A blogging application built on the edge environment using Hono and Cloudflare Workers",
+        "src": "/blogsum.png",
+        "githublink": "https://github.com/sinster2003/blogsum",
+        "livelink": "https://blogsum.vercel.app/"
     }
 ]

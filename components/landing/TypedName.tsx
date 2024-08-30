@@ -10,7 +10,6 @@ const TypedName = () => {
     const typed = new Typed(nameElement.current, {
         strings: ["Vasudeva"],
         typeSpeed: 100,
-        startDelay: 1000,
         showCursor: false,
     });
 

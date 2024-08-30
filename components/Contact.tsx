@@ -2,11 +2,13 @@
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useEffect } from "react";
 import zod from "zod";
 import FormComponent from "./FormComponent";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import emailjs from "@emailjs/browser";
 
 const formSchema = zod.object({
   name: zod.string().min(2, {
@@ -32,8 +34,29 @@ const Contact = () => {
     },
   });
 
-  const onSubmit = (data: zod.infer<typeof formSchema>) => {
-    console.log(data);
+  useEffect(() => {
+    // initialise the email client on mount
+    emailjs.init({
+      publicKey: process.env.NEXT_PUBLIC_API_KEY
+    })
+  }, []);
+
+  const onSubmit = async (data: zod.infer<typeof formSchema>) => {
+    try{
+      await emailjs.send(process.env.NEXT_PUBLIC_SERVICE_ID as string, 
+        process.env.NEXT_PUBLIC_TEMPLATE_ID as string, {
+          from_name: data.name,
+          user_email: data.email,
+          message: data.message,
+          recipient: process.env.NEXT_PUBLIC_EMAIL_ADDRESS
+        }
+      );
+      form.reset();
+      console.log(data);
+    } 
+    catch(error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -52,10 +75,12 @@ const Contact = () => {
 
           <div className="flex flex-col gap-5 justify-center items-center mt-[120px]">
             <div className="flex flex-col gap-1 items-center">
-              <p className="text-2xl font-semibold">Sindhur Vasudeva Shabaraya</p>
+              <p className="text-2xl font-semibold text-center">Sindhur Vasudeva Shabaraya</p>
               <p>Web developer</p>
             </div>
-            <Button className="text-primary bg-white hover:bg-gray-200 w-40">Hire Me</Button>
+            <Link href="mailto:sindhurvshabaraya2318@gmail.com">
+              <Button className="text-primary bg-white hover:bg-gray-200 w-40">Hire Me</Button>
+            </Link>
           </div>
 
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex flex-row gap-2">
