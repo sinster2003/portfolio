@@ -12,7 +12,7 @@ const Timeline = () => {
         </div>
 
         <div className="flex flex-col gap-4 md:hidden">
-            {experiences.map(experience => <TimelineMobile experience={experience}/>)}
+            {experiences.map(experience => <TimelineMobile key={experience.id} experience={experience}/>)}
         </div>
         
         <div className="md:block hidden">
