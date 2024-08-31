@@ -2,6 +2,7 @@ import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import TimelineElement from './TimelineElement';
 import experiences from '@/utils/experience.json';
+import TimelineMobile from './TimelineMobile';
 
 const Timeline = () => {
   return (
@@ -9,13 +10,20 @@ const Timeline = () => {
         <div className='flex flex-col gap-4 py-10 items-center text-center md:items-start md:text-start'>
             <p className='text-4xl text-primary-foreground'>Work Experience</p>
         </div>
-        <VerticalTimeline
-            layout='1-column-left'
-        >
-            {
-                experiences.map(experience => <TimelineElement key={experience.id} experience={experience}/>)
-            }
-        </VerticalTimeline>
+
+        <div className="flex flex-col gap-4 md:hidden">
+            {experiences.map(experience => <TimelineMobile experience={experience}/>)}
+        </div>
+        
+        <div className="md:block hidden">
+            <VerticalTimeline
+                layout='1-column-left'
+            >
+                {
+                    experiences.map(experience => <TimelineElement key={experience.id} experience={experience}/>)
+                }
+            </VerticalTimeline>
+        </div>
     </div>
   )
 }

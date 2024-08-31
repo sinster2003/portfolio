@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import BlobComponent from './BlobComponent';
 
-interface Experience {
+export interface Experience {
   id: string,
   role: string,
   place: string,

@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "role": "Javascript Contributor - Hacktoberfest",
+        "role": "Javascript Contributor",
         "place": "DOM Wizard",
         "work": [
             "Worked as a part of Hacktoberfest event on DOM Wizard for aiding easier dom manipulation.",
@@ -23,7 +23,7 @@
             "Worked exclusively on forms and validation.",
             "Built the authentication system in the backend part using firebase and majorly helped to link mutliple auth providers to a single account."
         ],
-        "timeline": "March 2024 - Present",
+        "timeline": "March 2024 - May 2024",
         "img": "/cosmic.png",
         "background": "#030712"
     }

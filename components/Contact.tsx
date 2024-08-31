@@ -64,11 +64,11 @@ const Contact = () => {
       <div className="flex flex-col gap-4 py-10 items-center md:items-start">
         <p className="text-4xl text-primary-foreground">Contact</p>
       </div>
-      <div className="flex flex-row gap-4">
-      <div className="border-2 rounded-lg border-primary py-8 px-6">
+      <div className="flex flex-col md:flex-row gap-20 md:gap-4">
+      <div className="border-2 rounded-lg border-primary py-8 px-6 mx-5 md:mx-0">
         <FormComponent form={form} onSubmit={onSubmit}/>
       </div>
-        <div className="relative flex flex-col gap-2 w-2/3 bg-primary rounded-lg">
+        <div className="relative flex flex-col gap-2 w-full h-80 md:w-2/3 md:h-auto bg-primary rounded-lg rounded-b-none md:rounded-lg">
           <div className="rounded-full w-40 h-40 border-4 border-primary absolute -top-[15%] left-1/2 -translate-x-1/2 bg-background">
             <Image src="/avatar.png" alt="sindhur-avatar" fill style={{ objectFit: "contain" }} className="rounded-full"/>
           </div>

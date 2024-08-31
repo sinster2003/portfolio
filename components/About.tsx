@@ -7,7 +7,7 @@ const About = () => {
       <div className="flex flex-col gap-4 py-10 self-center md:self-start">
         <p className="text-4xl text-primary-foreground">About</p>
       </div>
-      <div className="flex justify-center items-center h-[500px] w-[360px] bg-primary/40 p-6 rounded-2xl backdrop-filter backdrop-blur-3xl">
+      <div className="flex justify-center items-center h-[500px] w-[320px] md:w-[360px] bg-primary/40 p-6 rounded-2xl backdrop-filter backdrop-blur-3xl">
         <div className="flex flex-col bg-white w-full h-full rounded-2xl text-gray-700 p-4 px-6 gap-2">
           <div className="flex flex-col pt-2">
             <p className="text-primary text-xl font-semibold">Sindhur V Shabaraya</p>

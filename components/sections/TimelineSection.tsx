@@ -3,7 +3,7 @@ import Timeline from "../Timeline"
 
 const TimelineSection = () => {
   return (
-    <div className="my-20 mx-20 font-sans">
+    <div className="my-20 md:mx-20 font-sans">
         <Timeline/>
     </div>
   )

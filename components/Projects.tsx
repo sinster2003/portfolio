@@ -13,7 +13,7 @@ const Projects = () => {
       <div className="flex flex-wrap justify-center gap-6 my-10">
       {projects.map((project) => {
         return (
-          <Card key={project.id} className="w-[350px] h-[400px] border-[#7C3AED]">
+          <Card key={project.id} className="w-[320px] md:w-[350px] h-[400px] border-[#7C3AED]">
             <CardHeader className="flex flex-row justify-between items-center">
               <CardTitle className="w-fit">{project.title}</CardTitle>
               <div className="flex gap-2 items-center">
@@ -23,7 +23,7 @@ const Projects = () => {
             </CardHeader>
             <CardContent>
               <div className="flex flex-col gap-4">
-                <div className="relative w-[300px] h-[150px]">
+                <div className="relative w-[270px] h-[140px] md:w-[300px] md:h-[150px]">
                   <Image src={project.src} alt={project.title} fill style={{ objectFit: "contain" }}/>
                 </div>
                 <p>{project.desc}</p>

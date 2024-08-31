@@ -19,7 +19,7 @@ const TypedCode = () => {
     }, []);
 
     return(
-        <div className="absolute right-[60px] bottom-10 w-[470px] h-[210px] bg-black/20 py-8 pl-5 pr-10 rounded-2xl animate-accordion-up">
+        <div className="absolute right-[60px] bottom-10 w-[470px] h-[210px] bg-black/20 py-8 pl-5 pr-10 rounded-2xl animate-accordion-up hidden md:block">
             <div ref={divElement} className="flex justify-center items-center"></div>
         </div>
     );
