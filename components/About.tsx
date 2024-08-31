@@ -4,7 +4,7 @@ import Link from "next/link";
 const About = () => {
   return (
     <div className="flex flex-col items-center">
-      <div className="flex flex-col gap-4 py-10 self-start">
+      <div className="flex flex-col gap-4 py-10 self-center md:self-start">
         <p className="text-4xl text-primary-foreground">About</p>
       </div>
       <div className="flex justify-center items-center h-[500px] w-[360px] bg-primary/40 p-6 rounded-2xl backdrop-filter backdrop-blur-3xl">

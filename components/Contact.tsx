@@ -61,7 +61,7 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="flex flex-col gap-4 py-10">
+      <div className="flex flex-col gap-4 py-10 items-center md:items-start">
         <p className="text-4xl text-primary-foreground">Contact</p>
       </div>
       <div className="flex flex-row gap-4">

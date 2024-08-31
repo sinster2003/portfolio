@@ -7,7 +7,7 @@ import Link from "next/link";
 const Projects = () => {
   return (
     <div>
-      <div className="flex flex-col gap-4 py-10">
+      <div className="flex flex-col gap-4 py-10 items-center md:items-start">
         <p className="text-4xl text-primary-foreground">Projects</p>
       </div>
       <div className="flex flex-wrap justify-center gap-6 my-10">

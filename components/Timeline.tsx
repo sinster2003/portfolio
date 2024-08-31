@@ -6,7 +6,7 @@ import experiences from '@/utils/experience.json';
 const Timeline = () => {
   return (
     <div>
-        <div className='flex flex-col gap-4 py-10'>
+        <div className='flex flex-col gap-4 py-10 items-center text-center md:items-start md:text-start'>
             <p className='text-4xl text-primary-foreground'>Work Experience</p>
         </div>
         <VerticalTimeline
