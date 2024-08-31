@@ -11,7 +11,8 @@
         ],
         "timeline": "October 2023 - October 2023",
         "img": "/domwizard.png",
-        "background": "white"
+        "background": "white",
+        "link": "https://github.com/lindelwa122/dom-wizard"
     }, 
     {
         "id": "2",
@@ -25,6 +26,7 @@
         ],
         "timeline": "March 2024 - May 2024",
         "img": "/cosmic.png",
-        "background": "#030712"
+        "background": "#030712",
+        "link": "https://www.cosmictech.io"
     }
 ]

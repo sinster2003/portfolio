@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Experience } from './TimelineElement';
+import Link from 'next/link';
 
 const TimelineMobile = ({ experience }: { experience: Experience }) => {
     return(
@@ -10,7 +11,7 @@ const TimelineMobile = ({ experience }: { experience: Experience }) => {
                 </div>
                 <div className='flex flex-col gap-1 my-4 w-fit'>
                     <span className="text-2xl text-primary-foreground w-fit">{experience.role}</span>
-                    <span className='text-base text-[#9357fa] w-fit'>{experience.place}</span>
+                    <Link href={experience.link} target="_blank"><span className='text-base text-[#9357fa] w-fit'>{experience.place}</span></Link>
                 </div>
             </div>
             <ul className="list-disc m-4">

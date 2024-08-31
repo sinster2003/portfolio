@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useInView } from 'react-intersection-observer';
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import BlobComponent from './BlobComponent';
+import Link from 'next/link';
 
 export interface Experience {
   id: string,
@@ -10,7 +11,8 @@ export interface Experience {
   work: string[],
   timeline: string,
   img: string,
-  background: string
+  background: string,
+  link: string
 }
 
 const TimelineElement = ({ experience }: { experience: Experience }) => {
@@ -32,7 +34,7 @@ const TimelineElement = ({ experience }: { experience: Experience }) => {
         >
             <div className='flex flex-col gap-1 my-4'>
               <span className="text-2xl text-primary-foreground">{experience.role}</span>
-              <span className='text-base text-[#9357fa]'>{experience.place}</span>
+              <Link href={experience.link} target="_blank"><span className='text-base text-[#9357fa]'>{experience.place}</span></Link>
             </div>
             <ul className="list-disc m-4">
                 {

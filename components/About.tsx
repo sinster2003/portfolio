@@ -8,7 +8,7 @@ const About = () => {
         <p className="text-4xl text-primary-foreground">About</p>
       </div>
       <div className="flex justify-center items-center h-[500px] w-[320px] md:w-[360px] bg-primary/40 p-6 rounded-2xl backdrop-filter backdrop-blur-3xl">
-        <div className="flex flex-col bg-white w-full h-full rounded-2xl text-gray-700 p-4 px-6 gap-2">
+        <div className="flex flex-col bg-white w-full h-full rounded-2xl text-gray-700 p-4 px-6 gap-1.5 lg:gap-2">
           <div className="flex flex-col pt-2">
             <p className="text-primary text-xl font-semibold">Sindhur V Shabaraya</p>
             <p>Web developer</p>
@@ -27,12 +27,12 @@ const About = () => {
             <p className="text-xl text-primary font-semibold">Work Experience</p>
             <ul className="list-disc px-4 ml-1.5">
               <li>
-                <Link href="https://www.npmjs.com/package/create-project-with-dom-wizard" className="hover:underline">
+                <Link href="https://www.npmjs.com/package/create-project-with-dom-wizard" className="hover:underline" target="_blank">
                   DOM-Wizard
                 </Link>
               </li>
               <li>
-                <Link href="https://www.cosmictech.io/" className="hover:underline">
+                <Link href="https://www.cosmictech.io/" className="hover:underline" target="_blank">
                   Cosmictech.io
                 </Link>
               </li>
@@ -43,7 +43,7 @@ const About = () => {
               </li>
             </ul>
           </div>
-          <div className="flex flex-row gap-2 absolute bottom-10 -ml-1.5">
+          <div className="flex flex-row gap-2 absolute bottom-8 lg:bottom-10 -ml-1.5">
           <Link href="https://github.com/sinster2003" target="_blank">
             <Image src="/github.png" alt="github" width={30} height={30}/>
           </Link>
