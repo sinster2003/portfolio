@@ -10,8 +10,9 @@ import {
   import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
+import { LoaderIcon } from "react-hot-toast";
 
-const FormComponent = ({ form, onSubmit }: { form: any, onSubmit: any}) => {
+const FormComponent = ({ form, onSubmit, loading }: { form: any, onSubmit: any, loading: boolean}) => {
   return (
     <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-4">
@@ -74,7 +75,7 @@ const FormComponent = ({ form, onSubmit }: { form: any, onSubmit: any}) => {
                     Your message is mailed to sindhurvshabaraya2318@gmail.com
                   </FormDescription>
                   <FormMessage />
-                  <Button type="submit">Submit</Button>
+                  <Button type="submit" className="w-20">{!loading ? "Submit" : <LoaderIcon/>}</Button>
                 </FormItem>
               )}
             />

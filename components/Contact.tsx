@@ -2,13 +2,14 @@
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import zod from "zod";
 import FormComponent from "./FormComponent";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
+import toast from 'react-hot-toast';
 
 const formSchema = zod.object({
   name: zod.string().min(2, {
@@ -33,6 +34,7 @@ const Contact = () => {
       message: "",
     },
   });
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     // initialise the email client on mount
@@ -43,6 +45,7 @@ const Contact = () => {
 
   const onSubmit = async (data: zod.infer<typeof formSchema>) => {
     try{
+      setLoading(true);
       await emailjs.send(process.env.NEXT_PUBLIC_SERVICE_ID as string, 
         process.env.NEXT_PUBLIC_TEMPLATE_ID as string, {
           from_name: data.name,
@@ -51,11 +54,20 @@ const Contact = () => {
           recipient: process.env.NEXT_PUBLIC_EMAIL_ADDRESS
         }
       );
+      setLoading(false);
       form.reset();
-      console.log(data);
+      toast.success("Message sent successfully", {
+        className: "font-sans",
+        position: "bottom-right"
+      });
     } 
     catch(error) {
+      setLoading(false);
       console.log(error);
+      toast.error("Something went wrong, try again later", {
+        className: "font-sans",
+        position: "bottom-right"
+      });
     }
   };
 
@@ -66,7 +78,7 @@ const Contact = () => {
       </div>
       <div className="flex flex-col md:flex-row gap-20 md:gap-4">
       <div className="border-2 rounded-lg border-primary py-8 px-6 mx-5 md:mx-0">
-        <FormComponent form={form} onSubmit={onSubmit}/>
+        <FormComponent form={form} onSubmit={onSubmit} loading={loading}/>
       </div>
         <div className="relative flex flex-col gap-2 w-full h-80 md:w-2/3 md:h-auto bg-primary rounded-lg rounded-b-none md:rounded-lg">
           <div className="rounded-full w-40 h-40 border-4 border-primary absolute -top-[15%] left-1/2 -translate-x-1/2 bg-background">
